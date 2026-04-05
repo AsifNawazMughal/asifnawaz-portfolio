@@ -1,0 +1,201 @@
+/* Import Tailwind's base styles and utilities */
+@import "tailwindcss";
+
+/* Base box-sizing and scroll behavior */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* 🌈 Define CSS Variables for Light Mode */
+:root {
+  --background: rgb(255, 233, 217); /* This is the light peach background */
+  --foreground: rgb(8, 8, 8); /* Dark text/buttons */
+  --accent: rgb(255, 147, 48); /* General accent (e.g., hover states) */
+  --text-light: rgb(255, 255, 255); /* White text (e.g., on dark buttons) */
+  --yellow-light: #ffb646; /* The prominent yellow circle */
+  --light-gray-text: rgb(74, 74, 74); /* For the 'Product Designer' and client text */
+  --dark-signature-text: rgb(8, 8, 8); /* For the 'Mark Henry' signature on the image */
+}
+
+/* @theme inline: This connects your CSS variables to Tailwind's utility classes */
+@theme inline {
+  --color-primary-background: var(--background);
+  --color-primary-foreground: var(--foreground);
+  --color-foreground: var(--foreground);           /* enables bg-foreground, text-foreground */
+  --color-accent-orange: var(--accent);
+  --color-text-light-white: var(--text-light);
+  --color-yellow-highlight: var(--yellow-light);
+  --color-light-gray-text: var(--light-gray-text);
+  --color-dark-signature-text: var(--dark-signature-text);
+
+  /* Connect Next.js font variables to Tailwind's font-family utilities */
+  --font-sans: var(--font-sans); /* Used by font-sans utility */
+  --font-heading: var(--font-heading); /* Used by font-heading utility */
+}
+
+/* 🧠 Global body styles */
+body {
+  background: var(--text-light);
+  color: var(--foreground);
+}
+
+/* --- Keyframe Animations --- */
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tilt-up {
+  from {
+    transform: perspective(600px) rotateX(0deg) translateY(0);
+  }
+  to {
+    transform: perspective(600px) rotateX(-6deg) translateY(-6px);
+  }
+}
+
+@keyframes arrow-up {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes arrow-cycle {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  49% {
+    transform: translate(6px, -6px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-10px, 10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* --- Animation Utilities --- */
+@utility animate-arrow-cycle {
+  animation: arrow-cycle 0.8s ease-in-out both;
+}
+
+@utility animate-slide-left {
+  animation: slide-in-left 0.4s ease-out forwards;
+}
+
+@utility animate-slide-right {
+  animation: slide-in-right 0.4s ease-out forwards;
+}
+
+@utility animate-rotate-circle {
+  animation: rotate-circle 8s linear infinite;
+}
+
+@utility animate-zoom-pulse {
+  animation: zoom-pulse 2s ease-in-out infinite;
+}
+
+@utility animate-move-up {
+  animation: move-up 0.6s ease-out both;
+}
+
+@utility animate-tilt-up {
+  animation: tilt-up 0.8s ease-out both;
+}
+
+@utility animate-arrow-up {
+  animation: arrow-up 0.4s ease-in-out both alternate;
+}
+
+/* --- Animation Delay Utilities --- */
+@utility delay-100 {
+  animation-delay: 100ms;
+}
+
+@utility delay-200 {
+  animation-delay: 400ms;
+}
+
+@utility delay-300 {
+  animation-delay: 700ms;
+}
+
+@utility delay-400 {
+  animation-delay: 1100ms;
+}
+
+@utility delay-500 {
+  animation-delay: 1500ms;
+}
+
+@utility delay-600 {
+  animation-delay: 1900ms;
+}
+
+/* ── Ticker/Marquee ── */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@utility animate-ticker {
+  animation: ticker 20s linear infinite;
+}
