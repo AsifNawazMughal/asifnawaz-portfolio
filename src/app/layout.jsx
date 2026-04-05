@@ -4,6 +4,7 @@ import '../Styles/globals.css';
 
 import { DM_Sans, Syne } from 'next/font/google';
 import Footer from '@/Components/Footer/Footer';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Asif Nawaz — React & Next.js Developer',
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
