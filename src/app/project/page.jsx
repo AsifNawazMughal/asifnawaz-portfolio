@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaPython, FaGithub, FaUnity, FaGamepad, FaGlobe } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiTypescript, SiJavascript, SiTailwindcss, SiFastapi, SiCsharp, SiAppwrite } from "react-icons/si";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Container from "@/Components/Container";
 import { FadeUp, FadeLeft, FadeRight, StaggerContainer, StaggerItem } from "@/Components/Ui/ScrollReveal";
 import ProjectModal from "@/Components/Projects/ProjectModal";
 import LottiePlayer from "@/Components/Ui/LottiePlayer";
@@ -162,7 +163,7 @@ export default function Project() {
 
       {/* ── Page Header ──────────────────────────────────────── */}
       <section className="bg-primary-background pt-32 pb-16">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <FadeUp>
             <div className="flex items-center gap-4 mb-6">
               <div className="w-10 h-0.5 bg-foreground" />
@@ -179,12 +180,12 @@ export default function Project() {
               Click any card to see the full description, tech stack, GitHub repo, and live demo link.
             </p>
           </FadeUp>
-        </div>
+        </Container>
       </section>
 
       {/* ── Featured: CardioPredict AI ───────────────────────── */}
       <section className="py-16 bg-white">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <FadeUp>
             <div className="flex items-center gap-4 mb-10">
               <div className="w-10 h-0.5 bg-foreground" />
@@ -230,12 +231,12 @@ export default function Project() {
               </div>
             </button>
           </FadeUp>
-        </div>
+        </Container>
       </section>
 
       {/* ── Web Projects Grid ────────────────────────────────── */}
       <section className="py-16 bg-primary-background">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <FadeUp>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
               <div>
@@ -293,12 +294,12 @@ export default function Project() {
               </StaggerItem>
             ))}
           </StaggerContainer>
-        </div>
+        </Container>
       </section>
 
       {/* ── Games ────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <div className="flex flex-col lg:flex-row gap-14 items-center">
             <div className="lg:w-1/2">
               <FadeLeft>
@@ -339,12 +340,12 @@ export default function Project() {
               <LottiePlayer src={GAME_ANIMATION_URL} className="w-full max-w-[360px]" />
             </FadeRight>
           </div>
-        </div>
+        </Container>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────── */}
+      {/* ── CTA ────────────────────────────────────────────── */}
       <section className="py-20 bg-accent-orange text-white text-center">
-        <div className="mx-auto px-4 max-w-2xl">
+        <Container className="mx-auto px-4 max-w-2xl">
           <FadeUp>
             <h2 className="font-heading font-extrabold text-[clamp(2rem,4vw,3.5rem)] leading-tight mb-4">
               Have a Project in Mind?
@@ -358,7 +359,7 @@ export default function Project() {
               <MdOutlineArrowOutward size={20} className="group-hover:animate-arrow-cycle" />
             </a>
           </FadeUp>
-        </div>
+        </Container>
       </section>
     </main>
   );

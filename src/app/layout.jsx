@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body
-        className={`${dmSans.variable} ${syne.variable} antialiased font-sans text-primary-foreground bg-primary-background`}
+      <body data-scroll-behavior="smooth"
+        className={`${dmSans.variable} ${syne.variable} antialiased font-sans text-primary-foreground bg-primary-background `}
         suppressHydrationWarning={true} // Uncomment if hydration error persists (after checking browser extensions)
       >
           <PageLoader />

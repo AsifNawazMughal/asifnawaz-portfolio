@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { MdOutlineArrowOutward, MdOutlineWavingHand } from "react-icons/md";
+import { MdOutlineWavingHand } from "react-icons/md";
 import SocialLinks from "../Ui/SocialLinks";
 import Container from "../Container";
 import Button from "../Button";
@@ -40,16 +39,16 @@ export default function MyHero() {
         <div className="w-full lg:w-1/2 z-20">
           <div className="max-w-xl mt-16 sm:mt-14">
 
-            <div className="flex items-center gap-4 opacity-0 animate-slide-left delay-100">
+            <div className="flex items-center gap-4 mt-20 opacity-0 animate-slide-left delay-100">
               <svg xmlns="http://www.w3.org/2000/svg" width="65" height="2" viewBox="0 0 65 2" fill="none">
                 <path d="M0 1H65" stroke="#080808" />
               </svg>
-              <p className="font-heading font-extrabold text-2xl text-[#151515] flex items-center gap-1">
+              <p className="font-heading font-extrabold text-2xl text-[#151515] flex items-center gap-1" >
                 Hello, I&apos;m <MdOutlineWavingHand className="inline text-3xl text-yellow-400" />
               </p>
             </div>
 
-            <h1 className="text-foreground font-extrabold font-heading leading-[0.9] relative text-[clamp(4.6rem,6vw,7rem)] opacity-0 animate-slide-left delay-200 mt-4">
+            <h1 className="text-foreground font-extrabold font-heading leading-[0.9] relative text-[clamp(4.0rem,6vw,7rem)] opacity-0 animate-slide-left delay-200 mt-4">
               <span className="relative">
                 <span className="absolute -z-10 -left-[0.006em] top-[0.31em] w-[0.60em] h-[0.60em] bg-yellow-highlight rounded-full" />
                 Asif
@@ -62,15 +61,9 @@ export default function MyHero() {
               React / Next.js Developer &nbsp;·&nbsp; Ex Game Dev &nbsp;·&nbsp; CS Lecturer &nbsp;·&nbsp; Pakistan
             </p>
 
-            <div className="mt-6 mb-14 flex items-center gap-4 opacity-0 animate-slide-left delay-400">
-                <Button link="/contact" btext="Contact Me" black />
-              <Link
-                href="/project"
-                className="group inline-flex items-center gap-2 px-5 py-3 border border-light-gray-text rounded-md transition-colors duration-400 hover:bg-primary-foreground hover:text-text-light-white"
-              >
-                My Work
-                <MdOutlineArrowOutward size={24} className="group-hover:animate-arrow-cycle" />
-              </Link>
+            <div className="my-8 flex items-center gap-2 opacity-0 animate-slide-left delay-400">
+                <Button link="/about" btext="About Me" black />
+                <Button link="/project" btext="My Work" />
             </div>
 
             <div className="flex items-center justify-start opacity-0 animate-slide-left delay-500">

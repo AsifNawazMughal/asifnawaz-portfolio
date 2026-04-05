@@ -176,6 +176,7 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder={placeholder}
                         className="w-full px-4 py-3 border-2 border-gray-100 rounded-xl text-sm font-sans outline-none focus:border-accent-orange transition-colors duration-300 bg-primary-background"
+                        suppressHydrationWarning={true}
                       />
                     </div>
                   ))}
@@ -191,6 +192,7 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="Project Inquiry / Freelance / Say Hi"
                     className="w-full px-4 py-3 border-2 border-gray-100 rounded-xl text-sm font-sans outline-none focus:border-accent-orange transition-colors duration-300 bg-primary-background"
+                    suppressHydrationWarning={true}
                   />
                 </div>
 
@@ -207,6 +209,7 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="Tell me about your project or idea..."
                     className="w-full px-4 py-3 border-2 border-gray-100 rounded-xl text-sm font-sans outline-none focus:border-accent-orange transition-colors duration-300 resize-none bg-primary-background"
+                    suppressHydrationWarning={true}
                   />
                 </div>
 

@@ -1,6 +1,7 @@
 import MyHero from "./Hero/MyHero";
 import SkillsTicker from "./Home/SkillsTicker";
 import ServicesSection from "./Home/ServicesSection";
+import Container from "./Container";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaGamepad, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -18,7 +19,7 @@ const MainPage = () => {
 
       {/* ── Stats Banner ──────────────────────────────────────── */}
       <section className="py-14 bg-accent-orange text-white overflow-hidden">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <StaggerContainer className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {[
               { value: "8+", label: "Web Projects" },
@@ -32,12 +33,12 @@ const MainPage = () => {
               </StaggerItem>
             ))}
           </StaggerContainer>
-        </div>
+        </Container>
       </section>
 
       {/* ── Featured Games ─────────────────────────────────────── */}
       <section className="py-24 bg-primary-background">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-12">
             <FadeLeft>
               <div className="flex items-center gap-4 mb-4">
@@ -116,12 +117,12 @@ const MainPage = () => {
               </StaggerItem>
             ))}
           </StaggerContainer>
-        </div>
+        </Container>
       </section>
 
       {/* ── CTA Strip ─────────────────────────────────────────── */}
       <section className="py-20 bg-foreground text-white">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <FadeUp className="flex flex-col sm:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="font-heading font-extrabold text-[clamp(1.8rem,3vw,3rem)] leading-tight mb-2">
@@ -137,7 +138,7 @@ const MainPage = () => {
               <MdOutlineArrowOutward size={20} className="group-hover:animate-arrow-cycle" />
             </Link>
           </FadeUp>
-        </div>
+        </Container>
       </section>
     </>
   );

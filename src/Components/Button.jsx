@@ -18,8 +18,8 @@ const Button = ({
           (black
             ? 'bg-black text-white shadow hover:bg-primary-background hover:text-dark-signature-text'
             : white
-            ? 'hover:bg-primary-foreground hover:text-text-light-white'
-            : 'border-light-gray-text text-text-light-white')
+            ? 'border border-light-gray-text hover:bg-primary-foreground hover:text-text-light-white'
+            : 'border border-light-gray-text text-primary-foreground hover:bg-primary-foreground hover:text-text-light-white')
         }
       >
         {btext}

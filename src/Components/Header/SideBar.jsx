@@ -35,7 +35,7 @@ const SideBar = () => {
   const OpenButton = (
     <button
       onClick={openSidebar}
-      className="absolute top-0 right-0 z-1 w-20 h-18.5 bg-black flex flex-col items-center justify-center text-text-light-white text-2xl font-light hover:bg-gray-900 transition-colors cursor-pointer"
+      className="absolute top-0 right-0 z-1 w-16 h-18.5 md:w-20 md:h-18.5 bg-black flex flex-col items-center justify-center text-text-light-white text-2xl font-light hover:bg-gray-900 transition-colors cursor-pointer"
       style={{ border: "none" }}
       aria-label="Open Menu"
     >
@@ -77,7 +77,7 @@ const SideBar = () => {
       >
         <div className="flex justify-between items-center h-16 border-b border-gray-800">
           <div className="text-text-light-white ml-6">
-            <Image src="/offcanvas-logo.png" alt="Logo" width={90} height={35} />
+            <Image src="/offcanvas-logo.png" alt="Logo" className="w-auto h-auto" width={90} height={35} />
           </div>
           {CloseButton}
         </div>

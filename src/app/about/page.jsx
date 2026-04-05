@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Container from "@/Components/Container";
 import {
   FaReact, FaNodeJs, FaPython, FaGithub, FaUnity,
   FaGamepad, FaChalkboardTeacher, FaYoutube, FaLinkedinIn,
@@ -118,7 +119,7 @@ export default function About() {
 
       {/* ── Hero Intro ───────────────────────────────────────── */}
       <section className="bg-primary-background pt-32 pb-20">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%] flex flex-col lg:flex-row items-center gap-14">
+        <Container className="flex flex-col lg:flex-row items-center gap-14">
 
           <FadeLeft className="lg:w-1/2 space-y-7">
             <div className="flex items-center gap-4">
@@ -170,12 +171,12 @@ export default function About() {
           <FadeRight className="lg:w-1/2 flex justify-center">
             <LottiePlayer src={DEV_ANIMATION_URL} className="w-full max-w-[440px]" />
           </FadeRight>
-        </div>
+        </Container>
       </section>
 
-      {/* ── Stats ────────────────────────────────────────────── */}
+      {/* ── Stats ──────────────────────────────── */}
       <section className="py-14 bg-accent-orange text-white overflow-hidden">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <StaggerContainer className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
             {[
               { value: "8+", label: "Projects Shipped" },
@@ -189,12 +190,12 @@ export default function About() {
               </StaggerItem>
             ))}
           </StaggerContainer>
-        </div>
+        </Container>
       </section>
 
-      {/* ── Skills Grid ──────────────────────────────────────── */}
+      {/* ── Skills Grid ───────────────────────── */}
       <section className="py-24 bg-white">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <FadeUp>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-10 h-0.5 bg-foreground" />
@@ -214,12 +215,12 @@ export default function About() {
               </StaggerItem>
             ))}
           </StaggerContainer>
-        </div>
+        </Container>
       </section>
 
       {/* ── Experience Timeline ───────────────────────────────── */}
       <section className="py-24 bg-primary-background">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%]">
+        <Container>
           <FadeUp>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-10 h-0.5 bg-foreground" />
@@ -255,12 +256,12 @@ export default function About() {
               </FadeUp>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* ── Education + Certs ────────────────────────────────── */}
       <section className="py-24 bg-white">
-        <div className="mx-auto px-4 lg:px-8 md:w-[75%] grid grid-cols-1 md:grid-cols-2 gap-12">
+        <Container className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
           {/* Education */}
           <FadeLeft>
@@ -319,12 +320,12 @@ export default function About() {
               </Link>
             </div>
           </FadeRight>
-        </div>
+        </Container>
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────── */}
       <section className="py-20 bg-primary-background">
-        <div className="mx-auto px-4 max-w-2xl text-center">
+        <Container className="max-w-2xl text-center">
           <FadeUp>
             <h2 className="font-heading font-extrabold text-[clamp(2rem,4vw,3.5rem)] leading-tight mb-4">
               Let&apos;s Build Something Together
@@ -339,7 +340,7 @@ export default function About() {
               </Link>
             </div>
           </FadeUp>
-        </div>
+        </Container>
       </section>
     </main>
   );
