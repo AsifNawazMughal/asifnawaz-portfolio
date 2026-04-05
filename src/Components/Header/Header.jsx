@@ -7,12 +7,12 @@ import SideBar from "./SideBar";
 const Header = () => {
   return (
     <header className="absolute top-0 left-0 right-0 flex justify-center items-center max-h-20 z-50 ">
-      <div className="flex max-w-8xl w-[95%] justify-between items-center border-b-1 border-foreground text-center  relative">
+      <div className="flex max-w-8xl w-[95%] justify-between items-center border-b border-foreground text-center relative">
        <Link href="/" className="flex items-center justify-center "> <Image
           src="/logo.png"
           alt="Asif Nawaz logo"
-          width={80}
-          height={80}
+          width={75}
+          height={75}
           className="w-auto h-auto"
           priority
         /></Link>

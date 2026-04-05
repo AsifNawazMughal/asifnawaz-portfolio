@@ -39,7 +39,7 @@ export default function MyHero() {
         <div className="w-full lg:w-1/2 z-20">
           <div className="max-w-xl mt-16 sm:mt-14">
 
-            <div className="flex items-center gap-4 mt-20 opacity-0 animate-slide-left delay-100">
+            <div className="flex items-center gap-4 mt-30 opacity-0 animate-slide-left delay-100">
               <svg xmlns="http://www.w3.org/2000/svg" width="65" height="2" viewBox="0 0 65 2" fill="none">
                 <path d="M0 1H65" stroke="#080808" />
               </svg>
@@ -66,7 +66,7 @@ export default function MyHero() {
                 <Button link="/project" btext="My Work" />
             </div>
 
-            <div className="flex items-center justify-start opacity-0 animate-slide-left delay-500">
+            <div className="flex items-center justify-start opacity-0 animate-slide-left delay-500 mb-10">
               <div className="sm:hidden md:flex items-center border-r-2 border-light-gray-text gap-4 pr-6">
                 <div className="font-heading font-extrabold text-3xl sm:text-4xl leading-none">
                   <span aria-live="polite">{formatCount(count)}</span>
