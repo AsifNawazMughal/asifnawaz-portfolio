@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Asif Nawaz - Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with [Next.js](https://nextjs.org), [React](https://react.dev), and [Tailwind CSS](https://tailwindcss.com). Showcasing projects, skills, and professional experience.
 
-First, run the development server:
+## 🎨 Features
 
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Modern UI** - Clean and professional interface with smooth animations
+- **Project Showcase** - Display of completed projects with modals
+- **Skills Section** - Interactive skills ticker
+- **Blog** - Share insights and articles
+- **Contact Form** - Get in touch with ease
+- **About Page** - Learn more about background and expertise
+- **Dark Mode Ready** - Built with modern styling practices
+- **Performance Optimized** - Using Next.js for optimal performance
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 16+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/AsifNawazMughal/asifnawaz-portfolio.git
+cd asifnawaz-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                 # Next.js app directory
+│   ├── layout.jsx      # Root layout
+│   ├── page.jsx        # Home page
+│   ├── about/          # About page
+│   ├── blog/           # Blog page
+│   ├── contact/        # Contact page
+│   └── project/        # Projects page
+├── Components/         # React components
+│   ├── Button.jsx
+│   ├── Container.jsx
+│   ├── Header/         # Navigation header
+│   ├── Hero/           # Hero section
+│   ├── Home/           # Home page sections
+│   ├── Footer/         # Footer component
+│   ├── Projects/       # Project components
+│   └── Ui/            # UI components
+└── Styles/            # Global styles
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 14+
+- **Styling**: Tailwind CSS + PostCSS
+- **Component Library**: React
+- **Animation**: Lottie (LottiePlayer)
+- **JavaScript Configuration**: ESLint
 
-## Deploy on Vercel
+## 📝 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Pages
+
+- **Home** - Landing page with hero section and services
+- **About** - Personal background and skills
+- **Projects** - Portfolio of completed projects
+- **Blog** - Articles and insights
+- **Contact** - Contact information and form
+
+## 🚀 Deployment
+
+Deploy easily on [Vercel](https://vercel.com), the platform built by the creators of Next.js:
+
+1. Push your changes to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically deploy on push
+
+See the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📧 Contact
+
+- Email: [Your Email]
+- GitHub: [@AsifNawazMughal](https://github.com/AsifNawazMughal)
+- LinkedIn: [Your LinkedIn]
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+Made with ❤️ by Asif Nawaz
