@@ -58,7 +58,7 @@ export default function MyHero() {
             </h1>
 
             <p className="mt-5 text-lg sm:text-xl text-dark-signature-text max-w-xl font-extrabold font-heading opacity-0 animate-slide-left delay-300">
-              React / Next.js Developer &nbsp;·&nbsp; Ex Game Dev &nbsp;·&nbsp; CS Lecturer &nbsp;·&nbsp; Pakistan
+              React / Next.js Developer &nbsp;·&nbsp; Game Dev &nbsp;·&nbsp; CS Lecturer &nbsp;·&nbsp; Pakistan
             </p>
 
             <div className="my-8 flex items-center gap-2 opacity-0 animate-slide-left delay-400">
